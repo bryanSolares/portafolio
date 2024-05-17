@@ -33,5 +33,5 @@ jobs:
           aws-region: ${{secrets.AWS_REGION}}
 
       - name: Sync files bucket
-        run: aws s3 sync ./dist/ s3://${{secrets.AWS_BUCKET_NAME}} --delete --exclude errors/*
+        run: aws s3 sync ./dist/ s3://${{secrets.AWS_BUCKET_NAME}} --exclude errors/*
 

@@ -24,12 +24,14 @@ jobs:
       - name: Building page
         run: npm install && npm run build
 
-      # - name: Connect to AWS
-      #   uses: aws-actions/configure-aws-credentials@v1
-      #   with:
-      #     role-session-name: github-actions-aws
-      #     role-to-assume: ${{secrets.AWS_IAM_ROLE}}
-      #     aws-region: ${{secrets.AWS_REGION}}
 
-      # - name: Sync files bucket
-      #   run: aws s3 sync ./dist/ s3://${{secrets.AWS_BUCKET_NAME}} --delete
+      - name: Connect to AWS
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-session-name: github-actions-aws
+          role-to-assume: ${{secrets.AWS_IAM_ROLE}}
+          aws-region: ${{secrets.AWS_REGION}}
+
+      - name: Sync files bucket
+        run: aws s3 sync ./dist/ s3://${{secrets.AWS_BUCKET_NAME}} --delete --exclude errors/*
+

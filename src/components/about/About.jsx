@@ -1,5 +1,4 @@
 import "./about.css";
-import CV from "../../assets/doc/cv-bryan-solares.pdf";
 import Info from "./Info";
 
 const About = () => {
@@ -23,7 +22,12 @@ const About = () => {
             elevar los estándares, aportando valor significativo y sostenible en cada proyecto.
           </p>
           <div className="about__button">
-            <a download="" href={CV} className="button button--flex">
+            <a
+              download=""
+              href="https://pub-128e9079c0a54d5090dfe4124726e95f.r2.dev/cv-bryan-solares.pdf"
+              target="_blank"
+              className="button button--flex"
+            >
               Descargar CV
             </a>
           </div>

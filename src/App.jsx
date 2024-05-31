@@ -9,13 +9,12 @@ import Contact from "./components/contact/Contact";
 function App() {
   return (
     <>
-      {/* <Header /> */}
       <main className="main">
         <Home />
         <About />
-        {/* <Projects /> */}
         <Experience />
         <Skills />
+        <Projects />
         <Contact />
       </main>
     </>

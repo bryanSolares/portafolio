@@ -8,9 +8,7 @@ const About = () => {
       <span className="section__subtitle"></span>
 
       <div className="about__container container ">
-        {/* <img src={AboutImg} alt="Fotografía Bryan Solares" className="about__img" /> */}
         <div className="about__data">
-          <Info />
           <p className="about__description">
             Soy un apasionado de la ingeniería del caos, con un profundo interés en la seguridad de las aplicaciones y
             la implementación rigurosa de los requisitos no funcionales esenciales para un arquitecto de soluciones. Con
@@ -21,15 +19,16 @@ const About = () => {
             avanzados de AWS para construir sistemas robustos y escalables. Mi meta es no solo cumplir, sino también
             elevar los estándares, aportando valor significativo y sostenible en cada proyecto.
           </p>
+          <Info />
           <div className="about__button">
-            <a
+            {/* <a
               download=""
               href="https://pub-128e9079c0a54d5090dfe4124726e95f.r2.dev/cv-bryan-solares.pdf"
               target="_blank"
               className="button button--flex"
             >
               Descargar CV
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

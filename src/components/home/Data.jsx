@@ -1,3 +1,5 @@
+import "./home.css";
+
 const Data = () => {
   return (
     <div className="home__data">
@@ -7,8 +9,13 @@ const Data = () => {
       </h5>
       <p className="home__description"></p>
 
-      <a href="mailto:solares.josue@outlook.com" className="button button--flex">
-        Saludame si lo deseas 📫
+      <a
+        download=""
+        href="https://pub-128e9079c0a54d5090dfe4124726e95f.r2.dev/cv-bryan-solares.pdf"
+        target="_blank"
+        className="button"
+      >
+        Descargar CV
       </a>
     </div>
   );

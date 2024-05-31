@@ -1,9 +1,6 @@
 import "./home.css";
 import Social from "./Social";
 import Data from "./Data";
-//import ScrollDown from "./ScrollDown";
-
-/*TODO: Optimización de imágen*/
 const Home = () => {
   return (
     <section className="home section" id="home">

@@ -20,16 +20,7 @@ const About = () => {
             elevar los estándares, aportando valor significativo y sostenible en cada proyecto.
           </p>
           <Info />
-          <div className="about__button">
-            {/* <a
-              download=""
-              href="https://pub-128e9079c0a54d5090dfe4124726e95f.r2.dev/cv-bryan-solares.pdf"
-              target="_blank"
-              className="button button--flex"
-            >
-              Descargar CV
-            </a> */}
-          </div>
+          <div className="about__button"></div>
         </div>
       </div>
     </section>

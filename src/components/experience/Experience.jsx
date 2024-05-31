@@ -1,6 +1,3 @@
-import "./experience.css";
-import Info from "./Info";
-
 const Experience = () => {
   return (
     <section className="py-12 md:py-24">
@@ -17,7 +14,7 @@ const Experience = () => {
               <h3 className="text-xl font-bold text-gray-900">Analista de proyectos y Arquitecto AWS</h3>
               <p className="text-gray-600">Claro Centroamérica</p>
               <p className="text-gray-600">2022 - Presente</p>
-              <p className="mt-1 text-gray-600">
+              <p className="mt-1 text-gray-600 text-justify	">
                 Líder de análisis, diseño, implementación y seguimiento de soluciones tecnológicas para el ámbito
                 comercial y corporativo, manteniendo una comunicación constante con las áreas corporativas en
                 Centroamérica para el desarrollo e implementación de proyectos estratégicos y de alto valor, priorizando
@@ -35,7 +32,7 @@ const Experience = () => {
               <h3 className="text-xl font-bold text-gray-900">Analista/Desarrollador/Soporte y Atención al Cliente</h3>
               <p className="text-gray-600">Compumundo S.A.</p>
               <p className="text-gray-600">2018 - 2022</p>
-              <p className="mt-1 text-gray-600">
+              <p className="mt-1 text-gray-600 text-justify	">
                 Líder en el equipo de desarrollo, proponiendo diseños de arquitectura, gestionando tiempos,
                 desarrollando soluciones efectivas y facilitando la comunicación entre el equipo y los clientes.
                 Involucrado en el mantenimiento y mejora de aplicaciones móviles híbridas, implementando nuevas
@@ -53,7 +50,7 @@ const Experience = () => {
               <h3 className="text-xl font-bold text-gray-900">Analísta de proyectos</h3>
               <p className="text-gray-600">Imperial Fashion S.A.</p>
               <p className="text-gray-600">2015 - 2018</p>
-              <p className="mt-1 text-gray-600">
+              <p className="mt-1 text-gray-600 text-justify	">
                 Responsable del control, recepción y despacho de productos de bodega, así como la planificación del
                 calendario y tiempos para cumplir con los objetivos de producción y la verificación de estándares de
                 calidad. Desarrollo de herramientas informáticas para control de calidad mejorando significativamente

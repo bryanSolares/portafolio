@@ -18,21 +18,10 @@ const Experience = () => {
               <p className="text-gray-600">Claro Centroamérica</p>
               <p className="text-gray-600">2022 - Presente</p>
               <p className="mt-1 text-gray-600">
-                Lideré el análisis, diseño, implementación y seguimiento de soluciones tecnológicas para el ámbito
-                comercial y corporativo. Manteniendo una comunicación constante con las áreas corporativas en
-                Centroamérica, colaboré en el desarrollo e implementación de proyectos y coordiné la comunicación entre
-                diversos proveedores de desarrollo, garantizando una colaboración efectiva entre las áreas internas de
-                la empresa. Desarrollé e implementé nuevos requerimientos de programación en herramientas internas y
-                comerciales. Supervisé y capacité al personal asignado, asegurando la correcta ejecución de tareas y el
-                cumplimiento de objetivos. He presentado diseños de arquitectura a la gerencia para mejorar los tiempos
-                de implementación de sistemas, priorizando la automatización y disminuyendo procesos manuales e
-                implicaciones relacionadas. Estos diseños buscan principalmente la reducción de costos y el
-                aprovechamiento de las mejores alternativas tecnológicas de AWS según el caso de uso. Como líder, dirigí
-                eficazmente la implementación de proyectos estratégicos centrados en la automatización de auditorías
-                relacionadas con el lavado de dinero y en la gestión y automatización de procesos contables y de
-                presupuestación, impactando a la corporación a nivel Centroamérica. Coordiné de manera efectiva a todos
-                los equipos involucrados, estableciendo acuerdos claros y objetivos que aseguraron el cumplimiento de
-                los estándares y regulaciones exigidos por el cliente y el regulador.
+                Líder de análisis, diseño, implementación y seguimiento de soluciones tecnológicas para el ámbito
+                comercial y corporativo, manteniendo una comunicación constante con las áreas corporativas en
+                Centroamérica para el desarrollo e implementación de proyectos estratégicos y de alto valor, priorizando
+                la automatización y disminución de procesos manuales.
               </p>
             </div>
           </div>
@@ -43,23 +32,14 @@ const Experience = () => {
               </div>
             </div>
             <div className="flex-1">
-              <h3 className="text-xl font-bold text-gray-900">
-                Analista/Desarrollador - Soporte y Atención al Cliente
-              </h3>
+              <h3 className="text-xl font-bold text-gray-900">Analista/Desarrollador/Soporte y Atención al Cliente</h3>
               <p className="text-gray-600">Compumundo S.A.</p>
               <p className="text-gray-600">2018 - 2022</p>
               <p className="mt-1 text-gray-600">
-                Lideré el análisis, diseño e implementación de proyectos, manteniendo contacto directo con el cliente
-                durante todo el proceso de adquisición, implementación y uso inicial de la herramienta. Desempeñé un rol
-                de liderazgo en el equipo de desarrollo, gestionando tiempos, proponiendo soluciones efectivas y
-                facilitando la comunicación entre el equipo y los clientes. Me encargué del mantenimiento y mejora de
-                aplicaciones móviles híbridas, implementando nuevas funcionalidades para mejorar el rendimiento y la
-                satisfacción del cliente. Además, proporcioné atención personalizada y soporte técnico a los clientes.
-                Logré migrar exitosamente un backend de Node.js/Express de JavaScript a TypeScript en 5 meses, mejorando
-                la escalabilidad y reduciendo errores. Integré el backend y frontend con dos CRMs distintos y añadí
-                nuevas funcionalidades como la generación de reportes y la gestión de ventas. Mi trabajo tuvo un impacto
-                económico positivo, retuvo clientes y facilitó una negociación significativa de retención al final del
-                periodo laboral.
+                Líder en el equipo de desarrollo, proponiendo diseños de arquitectura, gestionando tiempos,
+                desarrollando soluciones efectivas y facilitando la comunicación entre el equipo y los clientes.
+                Involucrado en el mantenimiento y mejora de aplicaciones móviles híbridas, implementando nuevas
+                funcionalidades para mejorar el rendimiento y la satisfacción del cliente.
               </p>
             </div>
           </div>
@@ -74,17 +54,10 @@ const Experience = () => {
               <p className="text-gray-600">Imperial Fashion S.A.</p>
               <p className="text-gray-600">2015 - 2018</p>
               <p className="mt-1 text-gray-600">
-                Lideré el control, recepción y despacho de productos de bodega, así como la planificación del calendario
-                y tiempos para cumplir con los objetivos de producción y la verificación de estándares de calidad. En
-                cuanto a aportes informáticos, desarrollé una herramienta de control de calidad utilizando Visual Basic
-                que mejoró significativamente los tiempos y la precisión en el control de productos auditados. Esta
-                herramienta, basada en una base de datos en Excel, permitía a los usuarios comparar mediciones
-                anteriores y generar informes diarios automáticos, agilizando el proceso de autorización de calidad y
-                facilitando la búsqueda de mediciones de referencia. Además, desarrollé una herramienta personalizada
-                para registrar lotes de inventario e imprimir fichas relacionadas con las mediciones de calidad,
-                reduciendo el tiempo necesario para completar estas tareas de 2 horas a solo 20 minutos. Estos
-                desarrollos fueron aprobados por el gerente de informática y resultaron en mejoras notables en la
-                eficiencia operativa y en la entrega de resultados.
+                Responsable del control, recepción y despacho de productos de bodega, así como la planificación del
+                calendario y tiempos para cumplir con los objetivos de producción y la verificación de estándares de
+                calidad. Desarrollo de herramientas informáticas para control de calidad mejorando significativamente
+                los tiempos y la precisión en el control de productos auditados.
               </p>
             </div>
           </div>

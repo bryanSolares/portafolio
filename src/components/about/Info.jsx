@@ -1,15 +1,15 @@
 export default function Info() {
   return (
-    <section className="w-full ">
+    <section className="w-full">
       <div className="container grid gap-8 px-4 md:px-6">
         <div className="space-y-4">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-4xl">AWS Certifications</h2>
+          <h2 className="section__title">Certifications</h2>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
             <div className="space-y-2">
               <h3 className="font-semibold">AWS Certified Solutions Architect - Associate</h3>
               <div className="flex items-center space-x-2 text-sm text-gray-500 dark:text-gray-400">
                 <CalendarDaysIcon className="h-4 w-4" />
-                <span>Noviembre 2023</span>
+                <span>November 2023</span>
               </div>
               <a
                 href="https://www.credly.com/badges/9363b3b2-d251-40ae-9c47-37cf01483948/public_url"
@@ -24,7 +24,7 @@ export default function Info() {
               <h3 className="font-semibold">AWS Certified Developer - Associate</h3>
               <div className="flex items-center space-x-2 text-sm text-gray-500 dark:text-gray-400">
                 <CalendarDaysIcon className="h-4 w-4" />
-                <span>Abril 2024</span>
+                <span>April 2024</span>
               </div>
               <a
                 href="https://www.credly.com/badges/e5e017d2-6e0e-4bde-95f3-8b7a251dc968"
@@ -34,6 +34,20 @@ export default function Info() {
                 <ExternalLinkIcon className="h-4 w-4" />
                 <span>View Certificate</span>
               </a>
+            </div>
+            <div className="space-y-2">
+              <h3 className="font-semibold">Certified Kubernetes Application Developer (CKAD)</h3>
+              <div className="flex items-center space-x-2 text-sm text-gray-500 dark:text-gray-400">
+                <InProgressIcon className="h-4 w-4" />
+                <span>In Progress</span>
+              </div>
+            </div>
+            <div className="space-y-2">
+              <h3 className="font-semibold">Certified Kubernetes Administrator (CKA)</h3>
+              <div className="flex items-center space-x-2 text-sm text-gray-500 dark:text-gray-400">
+                <InProgressIcon className="h-4 w-4" />
+                <span>In Progress</span>
+              </div>
             </div>
           </div>
         </div>
@@ -87,6 +101,26 @@ function ExternalLinkIcon(props) {
       <path d="M15 3h6v6" />
       <path d="M10 14 21 3" />
       <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+    </svg>
+  );
+}
+
+function InProgressIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <circle cx="12" cy="12" r="10" />
+      <path d="M12 6v6l3 3" />
     </svg>
   );
 }

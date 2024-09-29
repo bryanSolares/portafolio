@@ -1,117 +1,46 @@
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+
 export default function Projects() {
+  const [repos, setRepos] = useState([]);
+
+  useEffect(() => {
+    async function fetchRepos() {
+      try {
+        const response = await axios.get("https://api.github.com/users/bryanSolares/repos?sort=created&per_page=6");
+        setRepos(response.data);
+      } catch (error) {
+        console.error("Error fetching repos:", error);
+      }
+    }
+    fetchRepos();
+  }, []);
+
   return (
-    <div className=" py-12 md:py-16 lg:py-20">
+    <div className="py-12 md:py-16 lg:py-20 dark:text-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center space-y-4 mb-8 md:mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Proyectos destacados</h2>
+          <h2 className="text-2xl md:text-3xl font-bold tracking-tight">Recent projects</h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8">
-          <div className=" rounded-lg shadow-lg overflow-hidden">
-            <div className="p-4 md:p-6">
-              <h3 className="text-xl font-bold mb-2">Backend para POS de ventas</h3>
-              <p className="text-gray-500 dark:text-gray-400 mb-4 text-xs">
-                Backend para control de ventas en punto de venta, con autenticación de usuarios y gestión de productos,
-                clientes, facturas y pagos.
-              </p>
-              <div className="flex items-center gap-2">
-                <div className="bg-gray-950		 rounded-full px-3 py-1 text-xs font-medium text-white	">Node.js</div>
-                <div className="bg-gray-950		 rounded-full px-3 py-1 text-xs font-medium text-white	">Express</div>
-                <div className="bg-gray-950		 rounded-full px-3 py-1 text-xs font-medium text-white	">MongoDB</div>
-              </div>
-              <div className="mt-4 flex gap-2">
-                <a
-                  href="https://github.com/bryanSolares/backend_pos"
-                  target="_blank"
-                  variant="outline"
-                  size="sm"
-                  className="flex items-center gap-2"
-                >
-                  <GithubIcon className="h-4 w-4" />
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className=" rounded-lg shadow-lg overflow-hidden">
-            <div className="p-4 md:p-6">
-              <h3 className="text-xl font-bold mb-2">Plantilla para API REST</h3>
-              <p className="text-gray-500 dark:text-gray-400 mb-4 text-xs">
-                Plantilla para desarrollo de API REST, con configuración de documentación y pruebas unitarias.
-              </p>
-              <div className="flex items-center gap-2">
-                <div className="bg-gray-950		 rounded-full px-3 py-1 text-xs font-medium text-white	">Node.js</div>
-                <div className="bg-gray-950		 rounded-full px-3 py-1 text-xs font-medium text-white	">Express</div>
-                <div className="bg-gray-950		 rounded-full px-3 py-1 text-xs font-medium text-white	">
-                  Supertest/Swagger
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          {repos.map((repo) => (
+            <div
+              key={repo.id}
+              className="rounded-lg shadow-2xl overflow-hidden transition-shadow duration-300 ease-in-out hover:shadow-lg bg-neutral-50"
+            >
+              <div className="p-4 md:p-6 rounded-lg shadow-md text-black">
+                <h3 className="text-sm font-semibold mb-2">{repo.name}</h3>
+                <h4 className="text-sm font-medium text-black mb-2">{repo.language || "No especificado"}</h4>
+                <p className="text-black mb-4 text-xs">{repo.description || "No hay descripción disponible."}</p>
+                <div className="mt-4 flex gap-2">
+                  <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                    <GithubIcon className="h-4 w-4" />
+                    <span>GitHub</span>
+                  </a>
                 </div>
               </div>
-              <div className="mt-4 flex gap-2">
-                <a
-                  href="https://github.com/bryanSolares/simple-skeleton-backend-nodejs-express"
-                  target="_blank"
-                  variant="outline"
-                  size="sm"
-                  className="flex items-center gap-2"
-                >
-                  <GithubIcon className="h-4 w-4" />
-                  GitHub
-                </a>
-              </div>
             </div>
-          </div>
-
-          <div className=" rounded-lg shadow-lg overflow-hidden">
-            <div className="p-4 md:p-6">
-              <h3 className="text-xl font-bold mb-2">Sito web estático en S3</h3>
-              <p className="text-gray-500 dark:text-gray-400 mb-4 text-xs">
-                Implementación de sitio estático en bucket S3.
-              </p>
-              <div className="flex items-center gap-2">
-                <div className="bg-gray-950		 rounded-full px-3 py-1 text-xs font-medium text-white	">AWS</div>
-                <div className="bg-gray-950		 rounded-full px-3 py-1 text-xs font-medium text-white	">Terraform</div>
-                <div className="bg-gray-950		 rounded-full px-3 py-1 text-xs font-medium text-white	">HTML</div>
-              </div>
-              <div className="mt-4 flex gap-2">
-                <a
-                  href="https://github.com/bryanSolares/s3-public-page-with-terraform"
-                  target="_blank"
-                  variant="outline"
-                  size="sm"
-                  className="flex items-center gap-2"
-                >
-                  <GithubIcon className="h-4 w-4" />
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className=" rounded-lg shadow-lg overflow-hidden">
-            <div className="p-4 md:p-6">
-              <h3 className="text-xl font-bold mb-2">API para administración de imágenes</h3>
-              <p className="text-gray-500 dark:text-gray-400 mb-4 text-xs">
-                Integración con AWS S3. Desarrollo de API para gestión de imágenes.
-              </p>
-              <div className="flex items-center gap-2">
-                <div className="bg-gray-950		 rounded-full px-3 py-1 text-xs font-medium text-white	">AWS</div>
-                <div className="bg-gray-950		 rounded-full px-3 py-1 text-xs font-medium text-white	">Nodejs/Express</div>
-                <div className="bg-gray-950		 rounded-full px-3 py-1 text-xs font-medium text-white	">Swagger</div>
-              </div>
-              <div className="mt-4 flex gap-2">
-                <a
-                  href="https://github.com/bryanSolares/manage-files-with-s3-and-nodejs-express"
-                  target="_blank"
-                  variant="outline"
-                  size="sm"
-                  className="flex items-center gap-2"
-                >
-                  <GithubIcon className="h-4 w-4" />
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

@@ -2,15 +2,14 @@ import "./contact.css";
 
 const Contact = () => {
   return (
-    <section className="contact section" id="contact">
-      <h2 className="section__title">Contacto</h2>
+    <section className="contact section dark:text-white" id="contact">
+      <h2 className="section__title">Contact</h2>
 
       <div className="contact__container container ">
         <div className="contact__data">
-          <p className="contact__description">Si tienes alguna pregunta, no dudes en contactarme.</p>
-          <div className="contact__button">
-            <a href="mailto:solares.josue@outlook.com" className="button button--flex">
-              Enviar correo 📫
+          <div className="contact__button text-black ">
+            <a href="mailto:solares.josue@outlook.com" className="button button--flex bg-neutral-50">
+              Email 📫
             </a>
           </div>
         </div>

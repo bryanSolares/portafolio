@@ -42,8 +42,8 @@
 .badge {
   padding: 2px 8px;
   margin-bottom: 20px;
-  background-color: rgba(134, 134, 135, 0.327);
-  color: black;
+  /* background-color: rgba(134, 134, 135, 0.327);
+  color: black; */
   border-radius: 10px;
   font-size: 12px;
 }

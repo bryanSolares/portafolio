@@ -3,21 +3,21 @@ import Info from "./Info";
 
 const About = () => {
   return (
-    <section className="about section" id="about">
-      <h2 className="section__title">Sobre mí</h2>
+    <section className="about section dark:text-white" id="about">
+      <h2 className="section__title">About me</h2>
       <span className="section__subtitle"></span>
 
       <div className="about__container container ">
         <div className="about__data">
           <p className="about__description">
-            Soy un apasionado de la ingeniería del caos, con un profundo interés en la seguridad de las aplicaciones y
-            la implementación rigurosa de los requisitos no funcionales esenciales para un arquitecto de soluciones. Con
-            más de 5 años de experiencia en el campo de la informática, he cultivado un compromiso inquebrantable con la
-            excelencia en cada proyecto. Mi enfoque se centra en destacar en lo ordinario y rechazar lo convencional,
-            siempre con el objetivo de innovar, superar expectativas y dejar una huella positiva en cada iniciativa en
-            la que participo. En mi trayectoria, he priorizado la seguridad y la resiliencia, aplicando principios
-            avanzados de AWS para construir sistemas robustos y escalables. Mi meta es no solo cumplir, sino también
-            elevar los estándares, aportando valor significativo y sostenible en cada proyecto.
+            I am passionate about chaos engineering, deeply interested in application security and the rigorous
+            implementation of the non-functional requirements essential for a solutions architect. With over 5 years of
+            experience in the field of informatics, I am committed to excellence in every project I undertake. My focus
+            is on excelling at the ordinary while rejecting the conventional, always with the goal of innovating,
+            exceeding expectations, and leaving a positive impact on every initiative I participate in. Throughout my
+            career, I have prioritized security and resilience, applying advanced AWS principles to build robust and
+            scalable systems. My aim is not just to meet standards, but to elevate them, delivering significant and
+            sustainable value to every project.
           </p>
           <Info />
           <div className="about__button"></div>

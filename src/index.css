@@ -6,13 +6,13 @@
 :root {
   --header-height: 3rem;
 
-  --hue: 0;
+  /* --hue: 0;
   --sat: 0%;
   --title-color: hsl(var(--hue), var(--sat), 20%);
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
-  --text-color: hsl(var(--hue), var(--sat), 46%);
-  --body-color: hsl(var(--hue), var(--sat), 98%);
-  --container-color: #fff;
+  --text-color: hsl(var(--hue), var(--sat), 10%);
+  --body-color: hsl(var(--hue), var(--sat), 95%);
+  --container-color: #fff; */
 
   --body-font: "Poppins", sans-serif;
 
@@ -74,8 +74,8 @@ textarea {
 }
 
 body {
-  background-color: var(--body-color);
-  color: var(--text-color);
+  /* background-color: var(--body-color); */
+  /* color: var(--text-color); */
 }
 
 h1,
@@ -137,15 +137,16 @@ img {
 
 .button {
   display: inline-block;
-  background-color: var(--title-color);
-  color: var(--container-color);
+  /* background-color: var(--title-color); */
+
+  /* color: var(--container-color); */
   padding: 1.25rem 2rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
 }
 
 .button:hover {
-  background-color: var(--title-color-dark);
+  /* background-color: var(--title-color-dark); */
 }
 
 .button__icon {
